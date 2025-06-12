@@ -1,0 +1,61 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "blog": "Blog",
+    "resume": "Resume",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Software Engineer. Creator. Problem Solver.",
+    "subtitle": "Building thoughtful software that serves quietly but powerfully.",
+    "tagline": "I craft digital experiences with care and precision.",
+    "cta": "View My Work"
+  },
+  "about": {
+    "title": "About Me",
+    "intro": "I believe code is more than logic — it's language. I build with empathy, patience, and joy. My journey in software engineering has been driven by a passion for creating solutions that make a difference in people's lives.",
+    "skills": {
+      "title": "Skills & Expertise",
+      "frontend": "Frontend Development",
+      "backend": "Backend Engineering",
+      "tools": "Tools & Technologies"
+    }
+  },
+  "projects": {
+    "title": "My Projects",
+    "subtitle": "A collection of work that showcases my skills and passion",
+    "filters": {
+      "all": "All",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "fullstack": "Full-stack",
+      "mobile": "Mobile"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Thoughts, lessons, and insights from my journey",
+    "readMore": "Read More"
+  },
+  "resume": {
+    "title": "Resume",
+    "download": "Download PDF",
+    "experience": "Experience",
+    "education": "Education",
+    "skills": "Skills"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Have a project in mind or just want to chat? Feel free to reach out.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "success": "Thank you! Your message has been sent."
+  },
+  "footer": {
+    "rights": "All rights reserved"
+  }
+}

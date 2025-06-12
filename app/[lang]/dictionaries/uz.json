@@ -1,0 +1,61 @@
+{
+  "navigation": {
+    "home": "Bosh sahifa",
+    "about": "Men haqimda",
+    "projects": "Loyihalar",
+    "blog": "Blog",
+    "resume": "Rezyume",
+    "contact": "Aloqa"
+  },
+  "hero": {
+    "title": "Dasturiy ta'minot muhandisi. Yaratuvchi. Muammolarni hal qiluvchi.",
+    "subtitle": "Sokin, ammo kuchli xizmat ko'rsatadigan o'ylangan dasturiy ta'minotni yaratish.",
+    "tagline": "Men raqamli tajribalarni g'amxo'rlik va aniqlik bilan yarataman.",
+    "cta": "Ishlarimni ko'ring"
+  },
+  "about": {
+    "title": "Men haqimda",
+    "intro": "Men kod mantiqdan ko'proq narsa ekanligiga ishonaman — bu til. Men hamdardlik, sabr va quvonch bilan quraman. Dasturiy ta'minot muhandisligidagi mening sayohatim odamlar hayotida farq qiladigan yechimlarni yaratishga bo'lgan ishtiyoq bilan boshqarilgan.",
+    "skills": {
+      "title": "Ko'nikmalar va tajriba",
+      "frontend": "Frontend dasturlash",
+      "backend": "Backend muhandisligi",
+      "tools": "Vositalar va texnologiyalar"
+    }
+  },
+  "projects": {
+    "title": "Mening loyihalarim",
+    "subtitle": "Mening ko'nikmalarim va ishtiyoqimni namoyish etadigan ishlar to'plami",
+    "filters": {
+      "all": "Hammasi",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "fullstack": "Full-stack",
+      "mobile": "Mobil"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Mening sayohatimdan fikrlar, saboqlar va tushunchalar",
+    "readMore": "Ko'proq o'qish"
+  },
+  "resume": {
+    "title": "Rezyume",
+    "download": "PDF yuklab olish",
+    "experience": "Tajriba",
+    "education": "Ta'lim",
+    "skills": "Ko'nikmalar"
+  },
+  "contact": {
+    "title": "Aloqaga chiqing",
+    "subtitle": "Loyiha haqida o'ylayapsizmi yoki shunchaki suhbatlashmoqchimisiz? Bemalol murojaat qiling.",
+    "name": "Ism",
+    "email": "Email",
+    "message": "Xabar",
+    "send": "Xabar yuborish",
+    "success": "Rahmat! Xabaringiz yuborildi."
+  },
+  "footer": {
+    "rights": "Barcha huquqlar himoyalangan"
+  }
+}
