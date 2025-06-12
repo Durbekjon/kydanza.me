@@ -36,8 +36,8 @@ export default async function RootLayout({
 
   return (
     <html lang={params.lang} suppressHydrationWarning>
-      <body className={`${outfit.variable} ${syne.variable} font-sans min-h-screen flex flex-col`}>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
+      <body className={`${outfit.variable} ${syne.variable} font-sans min-h-screen flex flex-col`} suppressHydrationWarning>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <Header lang={params.lang} dictionary={dictionary} />
           <main className="flex-grow">{children}</main>
           <Footer lang={params.lang} dictionary={dictionary} />

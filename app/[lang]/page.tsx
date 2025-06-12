@@ -6,11 +6,12 @@ import BlogPreview from "@/components/blog-preview"
 import ContactCTA from "@/components/contact-cta"
 
 export default async function Home({
-  params: { lang },
+  params,
 }: {
   params: { lang: string }
 }) {
-  const dict = await getDictionary(lang)
+  const dict = await getDictionary(params.lang)
+  const lang = params.lang
 
   return (
     <div className="space-y-24 pb-24">
