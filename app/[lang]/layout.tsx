@@ -6,12 +6,14 @@ import { locales } from "@/middleware"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { getDictionary } from "./dictionaries"
+import type { Metadata } from "next"
 
-// Fonts
+// Fonts with optimized loading
 const outfit = Outfit({
   subsets: ["latin"],
   variable: "--font-outfit",
   display: "swap",
+  preload: true,
 })
 
 const syne = Syne({
@@ -19,7 +21,16 @@ const syne = Syne({
   variable: "--font-syne",
   display: "swap",
   weight: ["400", "500", "600", "700", "800"],
+  preload: true,
 })
+
+export const metadata: Metadata = {
+  viewport: "width=device-width, initial-scale=1",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "white" },
+    { media: "(prefers-color-scheme: dark)", color: "black" },
+  ],
+}
 
 export async function generateStaticParams() {
   return locales.map((lang) => ({ lang }))
@@ -36,7 +47,7 @@ export default async function RootLayout({
 
   return (
     <html lang={params.lang} suppressHydrationWarning>
-      <body className={`${outfit.variable} ${syne.variable} font-sans min-h-screen flex flex-col`} suppressHydrationWarning>
+      <body className={`${outfit.variable} ${syne.variable} font-sans min-h-screen flex flex-col antialiased`} suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <Header lang={params.lang} dictionary={dictionary} />
           <main className="flex-grow">{children}</main>

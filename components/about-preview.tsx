@@ -1,23 +1,25 @@
 "use client"
-import { useRef } from "react"
+import { useRef, memo } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, CheckCircle } from "lucide-react"
 import { motion, useInView } from "framer-motion"
 
+const skills = [
+  "Frontend Development",
+  "Backend Engineering",
+  "UI/UX Design",
+  "Database Architecture",
+  "API Development",
+  "Cloud Services",
+] as const
+
+const MotionDiv = memo(motion.div)
+
 export default function AboutPreview({ dict, lang }: { dict: any; lang: string }) {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, amount: 0.1 })
-
-  const skills = [
-    "Frontend Development",
-    "Backend Engineering",
-    "UI/UX Design",
-    "Database Architecture",
-    "API Development",
-    "Cloud Services",
-  ]
 
   return (
     <section className="py-24 md:py-32 relative overflow-hidden">
@@ -25,7 +27,7 @@ export default function AboutPreview({ dict, lang }: { dict: any; lang: string }
 
       <div className="container">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
-          <motion.div
+          <MotionDiv
             ref={ref}
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -40,6 +42,8 @@ export default function AboutPreview({ dict, lang }: { dict: any; lang: string }
                 height={600}
                 alt="About Me"
                 className="object-cover w-full h-full"
+                priority
+                loading="eager"
               />
 
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
@@ -56,7 +60,7 @@ export default function AboutPreview({ dict, lang }: { dict: any; lang: string }
             </div>
 
             {/* Floating badge - only on desktop */}
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: 0.3 }}
@@ -65,10 +69,10 @@ export default function AboutPreview({ dict, lang }: { dict: any; lang: string }
               <div className="flex items-center gap-2">
                 <span className="text-sm font-medium">2+ Years Experience</span>
               </div>
-            </motion.div>
-          </motion.div>
+            </MotionDiv>
+          </MotionDiv>
 
-          <motion.div
+          <MotionDiv
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5, delay: 0.1 }}
@@ -81,7 +85,7 @@ export default function AboutPreview({ dict, lang }: { dict: any; lang: string }
             <p className="text-muted-foreground text-lg leading-relaxed">{dict.intro}</p>
 
             <div className="grid grid-cols-2 gap-3 pt-4">
-              {skills.map((skill, index) => (
+              {skills.map((skill) => (
                 <div key={skill} className="flex items-center gap-2">
                   <CheckCircle className="h-5 w-5 text-primary" />
                   <span>{skill}</span>
@@ -90,14 +94,14 @@ export default function AboutPreview({ dict, lang }: { dict: any; lang: string }
             </div>
 
             <div className="pt-6">
-              <Link href={`/${lang}/about`}>
+              <Link href={`/${lang}/about`} prefetch={false}>
                 <Button size="lg" className="group rounded-full px-8 h-14">
                   Learn More
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Button>
               </Link>
             </div>
-          </motion.div>
+          </MotionDiv>
         </div>
       </div>
     </section>
