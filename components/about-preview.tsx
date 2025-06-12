@@ -37,7 +37,7 @@ export default function AboutPreview({ dict, lang }: { dict: any; lang: string }
             <div className="absolute -inset-4 md:-inset-8 rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 blur-xl opacity-70 dark:opacity-30" />
             <div className="relative overflow-hidden rounded-2xl">
               <Image
-                src="https://media.licdn.com/dms/image/v2/D4D03AQHslwGcEHLLaQ/profile-displayphoto-shrink_200_200/B4DZS2iCTfH0Ac-/0/1738229163768?e=2147483647&v=beta&t=c3A4S8kDf0P_EJmqMidf0S2-ymPxS0He6cA4UBxO47Y"
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop"
                 width={600}
                 height={600}
                 alt="About Me"

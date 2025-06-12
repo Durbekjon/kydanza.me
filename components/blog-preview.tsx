@@ -15,7 +15,7 @@ const featuredPosts = [
     excerpt:
       "TypeScript has transformed how I write JavaScript. Here are the key benefits I've experienced and why you might want to consider it for your next project.",
     date: "2023-10-15",
-    image: "/placeholder.svg?height=200&width=400",
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=400&fit=crop",
     tags: ["TypeScript", "JavaScript"],
     slug: "why-i-love-typescript",
   },
@@ -25,7 +25,7 @@ const featuredPosts = [
     excerpt:
       "Clean architecture isn't just about code organization—it's about creating systems that can evolve and adapt over time. Let's explore the principles and benefits.",
     date: "2023-09-22",
-    image: "/placeholder.svg?height=200&width=400",
+    image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&h=400&fit=crop",
     tags: ["Architecture", "Best Practices"],
     slug: "power-of-clean-architecture",
   },

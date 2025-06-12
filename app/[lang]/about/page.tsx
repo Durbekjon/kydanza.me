@@ -11,7 +11,7 @@ export default async function AboutPage({
 
   return (
     <div className="container max-w-4xl py-12 space-y-16">
-      <section className="space-y-6">
+      <section className="space-y-6 px-10">
         <h1 className="text-4xl md:text-5xl font-bold">{dict.about.title}</h1>
 
         <div className="grid md:grid-cols-[2fr_1fr] gap-8 items-start">
@@ -31,7 +31,7 @@ export default async function AboutPage({
             <div className="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=400&width=300"
+                src="../durbek-neno.png"
                 width={300}
                 height={400}
                 alt="Portrait"
